@@ -1,0 +1,373 @@
+body {
+    margin: 0;
+    background-color: #d16e97;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --pri-color: pink;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+nav {
+    width: 85%;
+    margin: auto;
+    padding: 10px 0;
+    background-color: var(--pri-color);
+    border-radius: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 5%;
+    left: 7.5%;
+    z-index: 10;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.nav-logo {
+    width: 50px;
+    margin-left: 50px;
+}
+
+.menu-wrapper > a {
+    color: #fff;
+    margin-left: 50px;
+}
+
+.menu-wrapper > a:last-of-type {
+    padding: 15px 35px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.menu-wrapper > button {
+    display: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 45% 50% 5%;
+}
+
+.bg-img {
+    width: 45%;
+    height: 100vh;
+    background-color: blanchedalmond;
+    background-image: url(busola3.jpeg);
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-size: cover;
+}
+
+.bg-overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(184, 135, 199, 0.2);
+}
+
+.main-content {
+    z-index: 1;
+    background-color: #d16e97
+}
+
+
+.hero-box {
+    z-index: 10px;
+    width: 100%;
+    height: 100vh;
+    /*background-color:#373b40 ;*/
+    padding-top: 150px;
+    box-sizing: border-box;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.hero-box > h1 {
+    background-color: #d16e97;
+    padding: 70px;
+    margin-left: -150px;
+    font-size: 60px;
+    font-weight: 900;
+    border-radius: 240px;
+}
+
+.contacts {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 20px 30px;
+    border: 1px solid #fff;
+    border-radius: 80px;
+    color: #fff;
+    margin-right: 100px;
+}
+
+.downarrow {
+    padding: 15px 15px 15px 15px;
+    border: #fff solid 1px;
+    border-radius: 50%;
+    display: inline;
+    font-size: 20px;
+
+
+}
+
+.socials-area {
+    width: 5%;
+    height: 100vh;
+    background-color: blanchedalmond;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.social-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    line-height: 25px;
+    padding: 0 30px 20px 30px;
+    margin: 0 29.5px;
+}
+
+section {
+    border-bottom: 1px solid #fff;
+    padding: 50px 0;
+}
+
+section header > h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+section header > div {
+    color: var(--pri-color);
+    text-transform: uppercase;
+
+}
+
+.info-list ul {
+    padding-left: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+}
+
+.info-list ul li {
+    margin: 0 0 6px 0;
+    padding: 0 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.service-wrapper {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+}
+
+.service-icon {
+    color: rgb(204, 50, 183)
+}
+
+.experience-section {
+    width: 100%;
+    height: 50vh;
+    padding-top: 50px;
+    color: white;
+}
+
+.coding-skills {
+    width: 100%;
+    height: 90vh;
+    padding: 50px 0;
+    color: white;
+}
+
+.coding-skill-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 30px;
+}
+
+.skill-circle {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 2px solid rgb(203, 125, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-box {
+    width: 100%;
+    height: 1090px;
+    padding-top: 50px;
+    color: white;
+    border-bottom: var(--border-bottom);
+    padding-bottom: 300px;
+}
+
+.portfolio-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 30px;
+    justify-items: center;
+}
+
+.portfolio-img {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+}
+
+.portfolio-wrapper div {
+    text-align: center;
+    color: rgb(203, 125, 226);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.portfolio-wrapper a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.contact-box {
+    width: 100%;
+    height: 60vh;
+    padding-top: 50px;
+    color: white;
+    border-bottom: var(--border-bottom);
+    padding-bottom: 200px;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 30px;
+    justify-content: start;
+}
+
+.contacts-form {
+    padding: 40px 100px 0 0;
+}
+
+.contacts-form label {
+    background-color: #d16e97;
+    position: absolute;
+    top: -9px;
+    left: 30px;
+    padding: 0 7px;
+}
+
+.contacts-form strong {
+    font-weight: 700px;
+}
+
+.input-wrapper {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.contact-input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid white;
+    outline: none;
+    background: transparent;
+    border-radius: 30px;
+    padding: 0 30px;
+    color: #fff;
+}
+
+.contact-textarea {
+    width: 100%;
+    border: 1px solid white;
+    outline: none;
+    background: transparent;
+    border-radius: 30px;
+    padding: 0 30px;
+    color: #fff;
+}
+
+.contacts-form button {
+    border-radius: 80px;
+    padding: 20px 35px;
+    margin-top: 50px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.contact-wrapper > div:last-of-type {
+    border: #fff solid 1px;
+    border-radius: 60px;
+    padding: 20px;
+}
+
+.contact-wrapper ul {
+    padding-left: 0;
+    list-style-type: none;
+
+}
+
+.contact-wrapper ul strong {
+    color: rgb(203, 125, 226);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 400px) {
+    /* any styling that comes in here works on 768px devices and below */
+    .menu-wrapper>a {
+        display: none;
+    }
+
+    .menu-wrapper {
+        justify-content: end;
+    }
+}
